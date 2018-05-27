@@ -79,17 +79,17 @@ Basic MPD play settings can be controlled by Bragi-MPD too.
 Installation and Setup
 ----------------------
 
-You must have a [working installation of MPD](http://www.musicpd.org/doc/user/) for many Linux distributions this is little more than 'apt-get install mpd'.
+У вас должна быть [рабочая установка MPD](http://www.musicpd.org/doc/user/) для многих дистрибутивов Linux, это немного больше, чем 'apt-get install mpd'.
 
-Once you have MPD working you will need to spin up an instance of [Websockify](https://github.com/kanaka/websockify). Once you have Websockify downloaded and you have navigated to it's directory and assuming you use the standard port for MPD, you can start up an instance of it that should allow you to get started with MPD.js with the following command:
+После того, как вы работаете с MPD, вам нужно будет развернуть экземпляр [Websockify](https://github.com/kanaka/websockify). После того, как вы загрузили Websockify, и вы перешли к его каталогу, и если вы используете стандартный порт для MPD, вы можете запустить его экземпляр, который позволит вам начать работу с MPD.js с помощью следующей команды:
 
     ./run 8800 localhost:6600
 
-The version of all client side dependencies Bragi-MPD was built with are included in the repo. You simply have to clone the repo or download a zipped copy and extract into the webroot of a webserver. Apache or lighttpd would be good choices for this. If you don't feel like setting up a full webserver on Linux environments and just want to quickly test it out you can serve the files using this command from the root of the repo folder.
+Версия всех зависимостей на стороне клиента Bragi-MPD была построена с включенными в репо. Вам просто нужно клонировать репо или загружать заархивированную копию и извлекать ее в веб-сервер веб-сервера. Apache или lighttpd были бы хорошим выбором для этого. Если вам не хочется настраивать полный веб-сервер в средах Linux и просто хотите быстро протестировать его, вы можете обслуживать файлы с помощью этой команды из корня папки repo.
 
     python -m SimpleHTTPServer
 
-After that you should be able to start playing your music by navigating to your server in a web browser.
+После этого вы сможете начать играть свою музыку, перейдя на ваш сервер в веб-браузере.
 
 Configuration
 -------------
